@@ -1,7 +1,6 @@
 # NuxtBlog
 
 > Nuxt.js 프레임워크를 활용한 Blog 제작 튜토리얼
-> [site view] https://banananuxtapp.web.app/
 
 step1 > 튜토리얼을 참고한 nuxt 블로그 제작
 [참고 링크]
