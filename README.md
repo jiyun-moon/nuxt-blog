@@ -2,12 +2,28 @@
 
 > Nuxt.js 프레임워크를 활용한 Blog 제작 튜토리얼
 
-step1 > 튜토리얼을 참고한 nuxt 블로그 제작
-[참고 링크]
-https://vue-nuxt.gitbook.io/nuxt/tutorials/making-blog
 
-step2 > firebase 활용한 호스팅 및 인증.
-[참고 링크]
-https://fkkmemi.github.io/nuxt/nuxt-005-firebase-hosting/
+# step1 튜토리얼을 참고한 nuxt 블로그 제작
+야무 님의 nuxt gitbook.   
+간단하게 한바퀴 돌려볼 수 있는 것 같다.  
+시작은 nuxt 프로젝트 하기 전에 했지만 마무리는 프로젝트 끝나고 했기 때문에 처음과 끝의 느낌이 달랐는데,   
+처음 접하는 사람이 따라해보기에 좋은 것 같다.   
+스토어가 단순하게 되어 있고 자바스크립트 개발 보단 vue 생태계와 nuxt를 이해하기에 좋은 것 같다.   
+vuex는 확실히 개념이 있어야 이해가 쉽다. 동시에 한번은 해봐야 한다.   
+프로젝트를 하면서 느낀건..   
+내가 아무리 열심히 vuex, axios 세팅하고 써도 함께 작성하는 타인의 코드가 그 생태계를 망가트리면 스토어의 기능이 무의미 해진다는 것이다.   
+하지만 그럼에도 기본을 지키는 건 중요하다.   
 
-step3 > 로그인 안한 경우 경로 이동 및 css 수정
+[Nuxt 블로그 튜토리얼](https://vue-nuxt.gitbook.io/nuxt/tutorials/making-blog)
+
+# step2 > firebase 활용한 호스팅 및 인증.
+여기도 nuxt 공부하면서 찾았던 곳인데, 튜토리얼은 출퇴근시 코드만 읽어보았고   
+막상 적용은 위 프로젝트에 firebase를 적용할 때 다시 찾아서 보게되었다.   
+세상엔 감사한 능력자들이 참 많다!   
+[NUXT로 혼자 웹사이트 만들기](https://fkkmemi.github.io/nuxt/nuxt-005-firebase-hosting)
+
+# step3 > 로그인 안한 경우 경로 이동 및 css 수정
+
+***
+보통 작업시 바로바로 커밋하는 걸 선호하지만 본 프로젝트는 간단히 자리에서 끝내자 하고 시작해버려서 깃허브 스토리지를 추후에 작성하였음.
+그래서 롤백하거나 이전 작업 돌아가려면 gitbook을 찾아봐야해서 쬐끔 불편했음.
