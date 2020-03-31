@@ -1,4 +1,7 @@
-<template lang="pug">
+<template v-if="load">
+  <p>loading</p>
+</template>
+<template v-else lang="pug">
 section.post-list
 	post-preview(
 		v-for="post in posts"
@@ -26,7 +29,29 @@ export default {
       type: Array,
       required: true
     }
+  },
+  mounted() {
+    this.posts.reverse()
   }
+  // data: function() {
+  //   return {
+  //     load: true
+  //   }
+  // },
+  // computed: {
+  //   postsArr() {
+  //     const list = this.posts.reverse()
+  //     // this.load = false
+  //     return list
+  //   }
+  // },
+  // watch: {
+  //   postsArr(value) {
+  //     if (value) {
+  //       // this.load = false
+  //     }
+  //   }
+  // }
 }
 </script>
 

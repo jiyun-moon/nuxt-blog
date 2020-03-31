@@ -2,7 +2,7 @@
   "name": "nuxt-blog",
   "version": "1.0.0",
   "description": "Nuxt.js를 사용해 블로그 서비스 제작",
-  "author": "yamoo9&lt;yamoo9@naver.com&gt;",
+  "author": "jiyun0527&lt;jiyun0527@gmail.com&gt;",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -10,6 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "browserslist": "browserslist",
     "clear": "rm -rf .nuxt"
