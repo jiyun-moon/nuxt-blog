@@ -57,24 +57,23 @@ const createStore = () => {
       setPosts({ commit }, posts) {
         commit('setPosts', posts)
       },
-      createPost({ commit }, createdPost) {
+      createPost({ commit, getters }, createdPost) {
         createdPost.createdDate = new Date().toLocaleString()
         createdPost.updatedDate = createdPost.createdDate
         // Firebase 데이터베이스와 통신
         return this.$axios
-          .$post(`/posts.json?auth=${this.getters.token}`, createdPost)
-          .then(res => {
+          .$post(`/posts.json?auth=${getters.token}`, createdPost)
+          .then(data => {
             // 통신이 성공하면 뮤테이션에 커밋
             commit('createPost', { ...createdPost, id: data.name })
           })
           .catch(e => console.error(e))
       },
-      updatePost({ commit }, updatePost) {
+      updatePost({ commit, getters }, updatePost) {
         updatePost.updatedDate = new Date().toLocaleString()
-
         return this.$axios
           .$put(
-            `/posts/${updatePost.id}.json?auth=${this.getters.token}`,
+            `/posts/${updatePost.id}.json?auth=${getters.token}`,
             updatePost
           )
           .then(data => {
