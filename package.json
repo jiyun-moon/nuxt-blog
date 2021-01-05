@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "@nuxtjs/axios": "^5.9.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cross-env": "^5.2.0",
     "module": "^1.2.5",
     "nuxt": "^2.0.0",
